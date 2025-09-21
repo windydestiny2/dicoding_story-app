@@ -1,5 +1,5 @@
 APP_URL=http://localhost:9000
 
-DEPLOYMENT_URL= https://dicodingstoryappwindy.netlify.app/#/
+DEPLOYMENT_URL= https://dicoding-story-app-windy.netlify.app/#/login
 
 MAP_SERVICE_API_KEY=QhP30VXdqcjA35filTRr
