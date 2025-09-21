@@ -39,10 +39,7 @@ module.exports = {
         },
       ],
     }),
-    new InjectManifest({
-      swSrc: path.resolve(__dirname, "src/sw.js"),
-      swDest: "sw.bundle.js",
-    }),
+    
     // new WebpackPwaManifest({
     //   name: 'Go Eat App',
     //   short_name: 'Go Eat',

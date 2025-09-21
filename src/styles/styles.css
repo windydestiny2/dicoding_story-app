@@ -531,37 +531,93 @@ header {
   text-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
 }
 
-/* LOGIN, REGISTER PAGE */
-.register-form-container,
-.login-form-container {
-  max-width: 400px;
-  height: 100%;
-  margin-inline: auto;
-}
-
-.register__title,
-.login__title {
-  text-align: center;
-  margin-block: 30px 20px;
-}
-
-.register-form,
-.login-form {
-  border-radius: 8px;
+/* Auth Pages - Login & Register */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
   padding: 20px;
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
 }
 
-.register-form__form-buttons,
-.login-form__form-buttons {
-  flex-direction: column;
-  align-items: stretch;
+.auth-card {
+  background: #fffbea;
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.register-form__already-have-account,
-.login-form__do-not-have-account {
+.auth-title {
   text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #795548;
 }
-/* END OF LOGIN, REGISTER PAGE */
+
+.auth-form .form-group {
+  margin-bottom: 18px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #5d4037;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0c97f;
+  background: #fffdf5;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #fbc02d;
+  box-shadow: 0 0 0 2px rgba(251, 192, 45, 0.3);
+}
+
+.btn-auth {
+  width: 100%;
+  padding: 12px;
+  background: #fdd835;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5d4037;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-auth:hover {
+  background: #fbc02d;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #5d4037;
+}
+
+.auth-switch a {
+  color: #f57f17;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+/* END OF Auth Pages - Login & Register */
 
 /* HOME PAGE */
 .storys-list__map__container,

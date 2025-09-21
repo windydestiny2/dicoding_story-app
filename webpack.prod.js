@@ -33,9 +33,9 @@ module.exports = merge(common, {
     // new GenerateSW({
     //   swDest: 'sw.workbox.bundle.js',
     // }),
-    // new InjectManifest({
-    //   swSrc: path.resolve(__dirname, "src/sw.js"),
-    //   swDest: "sw.bundle.js",
-    // }),
+    new InjectManifest({
+      swSrc: path.resolve(__dirname, "src/sw.js"),
+      swDest: "sw.bundle.js",
+    }),
   ],
 });

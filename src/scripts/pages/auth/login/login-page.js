@@ -6,38 +6,34 @@ import * as AuthModel from "../../../utils/auth";
 export default class LoginPage {
   #presenter = null;
 
-  async render() {
-    return `
-      <section class="login-container">
-        <article class="login-form-container">
-          <h1 class="login__title">Masuk akun</h1>
+  // src/scripts/pages/auth/login/login-page.js
+async render() {
+  return `
+    <section class="auth-container login-theme">
+      <article class="auth-card">
+        <h1 class="auth-title">Masuk ke Akun</h1>
 
-          <form id="login-form" class="login-form">
-            <div class="form-control">
-              <label for="email-input" class="login-form__email-title">Email</label>
+        <form id="login-form" class="auth-form">
+          <div class="form-group">
+            <label for="email-input">Email</label>
+            <input id="email-input" type="email" name="email" placeholder="contoh@email.com" required>
+          </div>
 
-              <div class="login-form__title-container">
-                <input id="email-input" type="email" name="email" placeholder="Contoh: nama@email.com">
-              </div>
-            </div>
-            <div class="form-control">
-              <label for="password-input" class="login-form__password-title">Password</label>
+          <div class="form-group">
+            <label for="password-input">Password</label>
+            <input id="password-input" type="password" name="password" placeholder="••••••" required>
+          </div>
 
-              <div class="login-form__title-container">
-                <input id="password-input" type="password" name="password" placeholder="Masukkan password Anda">
-              </div>
-            </div>
-            <div class="form-buttons login-form__form-buttons">
-              <div id="submit-button-container">
-                <button class="btn" type="submit">Masuk</button>
-              </div>
-              <p class="login-form__do-not-have-account">Belum punya akun? <a href="#/register">Daftar</a></p>
-            </div>
-          </form>
-        </article>
-      </section>
-    `;
-  }
+          <div id="submit-button-container">
+            <button class="btn-auth" type="submit">Masuk</button>
+          </div>
+          <p class="auth-switch">Belum punya akun? <a href="#/register">Daftar disini</a></p>
+        </form>
+      </article>
+    </section>
+  `;
+}
+
 
   async afterRender() {
     this.#presenter = new LoginPresenter({
