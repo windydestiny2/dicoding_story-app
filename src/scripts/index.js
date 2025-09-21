@@ -1,11 +1,11 @@
-// CSS imports
+// CSS import
 import "../styles/styles.css";
 import "../styles/responsives.css";
 import "tiny-slider/dist/tiny-slider.css";
 import "leaflet/dist/leaflet.css";
 // console.log("CSS Loaded!");
 
-// Components
+// Components and utils
 import App from "./pages/app";
 import Camera from "./utils/camera";
 import { registerServiceWorker } from "./utils";
